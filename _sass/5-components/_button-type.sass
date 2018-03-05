@@ -1,0 +1,169 @@
+[class*="btn"]
+	cursor: pointer
+
+a[class*="btn"]
+	padding-top: 6px
+
+.btn
+	+btn($color-important)
+
+.btn-add
+	+btn($color-important, $fa-plus)
+
+.btn-back
+	+btn($color-important, $fa-caret-left)
+
+.btn-block,
+.btn-ban
+	+btn($color-remove, $fa-ban)
+
+.btn-ban--icon
+	+btn-icon-only($color-remove, $fa-ban)
+
+.btn-cancel
+	+btn($color-cancel, $fa-close)
+
+.btn-close
+	+btn($color-remove, $fa-close)
+
+.btn-continue
+	+btn($color-important, $fa-play)
+
+.btn-copy
+	+btn($color-important, $fa-files-o)
+
+.btn-copy-icon
+	+btn-icon-only($color-important, $fa-files-o)
+
+.btn-edit
+	+btn($color-important, $fa-edit)
+
+.btn-edit--icon
+	+btn-icon-only($color-important, $fa-edit)
+
+.btn-error
+	+btn($color-remove, $fa-close)
+
+.btn-error--icon
+	+btn-icon-only($color-remove, $fa-close)
+
+.btn-fix
+	+btn($color-warning, $fa-wrench)
+
+.btn-img
+	+btn-icon-only($color-important, $fa-picture-o)
+
+.btn-in-progress
+	+btn($color-warning, $fa-send-o)
+
+[class*="btn-miniature-"]
+	border: 1px solid $color-cancel
+
+	&:after
+		color: $color-cancel
+
+	&:hover
+		border-color: $color-red
+
+		&:after
+			color: $color-red
+
+.btn-miniature-list--icon
+	+btn-icon-only(transparent, $fa-list)
+
+.btn-miniature-settings--icon
+	+btn-icon-only(transparent, $fa-wrench)
+
+.btn-refresh
+	+btn($color-important, $fa-refresh)
+
+.btn-remove
+	+btn($color-remove, $fa-trash-o)
+
+.btn-remove--icon
+	+btn-icon-only($color-remove, $fa-trash-o)
+
+.btn-save
+	+btn($color-success, $fa-check)
+
+.btn-save--icon
+	+btn-icon-only($color-success, $fa-check)
+
+.btn-search
+	+btn($color-important, $fa-search)
+
+.btn-search--icon
+	+btn-icon-only($color-important, $fa-search)
+
+.btn-search--big
+	+btn-big($color-success, $fa-search)
+
+.btn-settings
+	+btn($color-important, $fa-cog)
+
+.btn-settings-author
+	+btn($color-important, $fa-cog)
+
+.btn-show
+	+btn($color-important, $fa-eye)
+
+.btn-show--icon
+	+btn-icon-only($color-important, $fa-eye)
+
+.btn-prev
+	+btn($color-important, $fa-angle-left)
+
+.btn-next
+	+btn($color-important, $fa-angle-right, $icon-right: true)
+
+.btn-pin
+	+btn($color-success, $fa-thumb-tack)
+
+.btn-pin--icon
+	+btn-icon-only($color-success, $fa-thumb-tack)
+
+.btn-un-pin
+	+btn($color-warning, $fa-chain-broken)
+
+.btn-un-pin--icon
+	+btn-icon-only($color-warning, $fa-chain-broken)
+
+.btn-warning
+	+btn($color-warning, $fa-send-o)
+
+.btn-warning--icon
+	+btn-icon-only($color-warning, $fa-send-o)
+
+button:disabled,
+.btn--disabled
+	+btn-disabled
+
+.btn--outside
+	position: absolute
+	top: -10px
+	right: 0
+	display: inline-block
+	min-width: 200px
+
+.btn--main-action
+	+font(18px)
+	min-width: 350px
+	height: 46px
+	padding-left: 50px
+	margin: 10px auto
+
+	&::before
+		+font(18px, $line-height: 48px)
+		width: 46px
+		height: 46px
+
+.btn--small
+	+font(11px)
+	padding: 2px 5px
+	margin-bottom: 5px
+	text-align: right
+
+	&::before
+		+font(11px, $line-height: 20px)
+		width: 20px
+		height: 20px
