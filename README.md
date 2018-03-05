@@ -1,1 +1,1 @@
-# uu_master
+# Jekyll boilerplate
