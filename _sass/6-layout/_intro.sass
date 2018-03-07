@@ -1,0 +1,44 @@
+.intro
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	position: relative
+	height: 100vh
+	background:
+		image: url(../img/gplay.png)
+		repeat: repeat
+
+	+media(m)
+		flex-direction: row
+
+	header
+		margin-right: 30px
+
+	h1,
+	h2,
+	h3
+		+font($font-size-header-main, $line-height: 1)
+		color: rgba($color-black, .2)
+
+		+media(m)
+			+font($line-height: .8)
+
+	h3
+		+font(20px, 700)
+		position: absolute
+		bottom: 10vh
+		width: 100%
+		text-align: center
+
+	.intro__logo
+		display: block
+		margin-top: 30px
+		height: auto
+		width: 80vw
+
+		+media(s, -100px)
+			width: 50vw
+
+		+media(m)
+			width: 30vw
