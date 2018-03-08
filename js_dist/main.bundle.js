@@ -165,27 +165,30 @@ const dimensions = {
 
 
 const colors = {
-
-    'sea': '#4aa3ba',
-    'color24': '#11999E',
-    'color39': '#96CD39',
-    'color40': '#F40967',
-    'color41': '#3498DB',
-    'color42': '#FCC29A',
-    'color43': '#BAF5F0',
-    'color44': '#C9FDD7',
-    'color45': '#79D1C3',
-    'color46': '#6892D5',
-    'color47': '#FD9191',
-    'color48': '#F5FC9E',
-    'color49': '#9EFCB4',
-    'color50': '#85C8DD',
-    'color51': '#D3BD9A',
-    'color52': '#F5F0E8',
-    'color53': '#B0E6FF',
-    'color54': '#7687DB',
-    'color55': '#ABCECF',
-    'color56': '#C4DCE0'
+    'color1': '#4aa3ba',
+    'color2': '#11999E',
+    'color3': '#96CD39',
+    'color4': '#F40967',
+    'color5': '#3498DB',
+    'color6': '#BAF5F0',
+    'color7': '#79D1C3',
+    'color8': '#6892D5',
+    'color9': '#9EFCB4',
+    'color10': '#85C8DD',
+    'color11': '#B0E6FF',
+    'color12': '#7687DB',
+    'color15': '#3A9188',
+    'color16': '#B9BBDF',
+    'color17': '#878ECD',
+    'color18': '#0DE2EA',
+    'color19': '#A0F6D2',
+    'color20': '#72DFD0',
+    'color21': '#33CCCC',
+    'color22': '#75BEDA',
+    'color24': '#F6A1CF',
+    'color25': '#F182C4',
+    'color28': '#CE72BD',
+    'color29': '#E352AE'
 };
 /* harmony export (immutable) */ __webpack_exports__["a"] = colors;
 
