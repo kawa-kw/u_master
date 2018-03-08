@@ -16,23 +16,23 @@
 		margin-right: 30px
 
 	h1,
-	h2,
-	h3
-		+font($font-size-header-main, $line-height: 1)
+	h2
+		+font($font-size-header-main, 900, 1)
 		color: rgba($color-black, .2)
 
 		+media(m)
 			+font($line-height: .8)
 
-	h3
+	h2
 		+font(20px, 700)
 		position: absolute
 		bottom: 10vh
 		width: 100%
 		text-align: center
 
-	.intro__logo
+	svg
 		display: block
+		padding: 10px
 		margin-top: 30px
 		height: auto
 		width: 80vw
@@ -42,3 +42,24 @@
 
 		+media(m)
 			width: 30vw
+
+.wheel-part
+	+transition
+
+	+media(s)
+		// transform parameters changed by 5px compared to svg props
+		&--1:hover
+			+transition
+			transform: translate(0, -5px)
+
+		&--2:hover
+			transform: translate(80.955321px, 85.633042px) scale(-1, 1) rotate(64deg) translate(-80.955321px, -85.633042px)
+
+		&--3:hover
+			transform: translate(73.977098px, 191.652654px) rotate(-111deg) translate(-73.977098px, -191.652654px)
+
+		&--4:hover
+			transform: translate(125.962501px, 255.515069px) scale(-1, 1) rotate(181deg) translate(-125.962501px, -255.515069px)
+
+		&--5:hover
+			transform: translate(238.401165px, 234.140823px) rotate(123deg) translate(-238.401165px, -234.140823px)
