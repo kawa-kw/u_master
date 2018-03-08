@@ -70,14 +70,14 @@
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__runLogoAnimation__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__generateRandomColor__ = __webpack_require__(2);
+
 
 
 $(document).ready(() => {
 
     Object(__WEBPACK_IMPORTED_MODULE_0__runLogoAnimation__["a" /* default */])();
-    // moveBcgLayer($('.js-intro-bcg-shapes'), $('#dev-bcg-intro-color #bcg-1'), 20);
-    // moveBcgLayer($('.js-intro-bcg-shapes'), $('#dev-bcg-intro-color #bcg-2'), 20);
-    // moveBcgLayer($('.js-intro-bcg-shapes'), $('#dev-bcg-intro-color #bcg-3'), 30);
+    Object(__WEBPACK_IMPORTED_MODULE_1__generateRandomColor__["a" /* default */])();
     console.log('animacja działa? działa!');
 });
 
@@ -113,9 +113,90 @@ function runLogoAnimation() {
     var $logoName = $('.js-logo-text');
 
     tl.to($introHeader, 0, { opacity: 0 }).to($logoFull, 0, { opacity: 0 }).to($logoPart, 0, { opacity: 0 }).to($comingSoon, 0, { opacity: 0 }).to($uDream, 0, { x: '-=20' }, '+=.5').to($uPlan, 0, { x: '-=20' }).to($uMaster, 0, { x: '-=20' }).to($uDream, 1, { opacity: 1, x: '0', ease: Linear.easeOut }).to($uPlan, 1, { opacity: 1, x: '0', ease: Linear.easeOut }).to($uMaster, 1, { opacity: 1, x: '0', ease: Linear.easeOut }).to($logoFull, 0, { opacity: 1 }).to($wheelPart1, .2, { opacity: 1, ease: Back.easeOut.config(1.4) }, '+=.1').to($wheelPart2, .2, { opacity: 1, ease: Back.easeOut.config(1.4) }, '-=.1').to($wheelPart3, .2, { opacity: 1, ease: Back.easeOut.config(1.4) }, '-=.1').to($wheelPart4, .2, { opacity: 1, ease: Back.easeOut.config(1.4) }, '-=.1').to($wheelPart5, .2, { opacity: 1, ease: Back.easeOut.config(1.4) }, '-=.1').to($logoName, 2, { opacity: 1, ease: Linear.easeOut }, '+=.2').to($comingSoon, 1, { opacity: 1, ease: Linear.easeOut });
-
-    //.to($('#bcg-3-float-3'), 100, {x:'+=1000', y:'+=500'}, '-=.2')
 };
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = generateRandomColor;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__variables__ = __webpack_require__(3);
+
+
+function generateRandomColor() {
+    const $body = $('body');
+    const bcgColorsList = [];
+
+    for (__WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colors */].colorName in __WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colors */]) {
+        bcgColorsList.push(__WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colors */][__WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colors */].colorName]);
+    };
+
+    var randomIndxList = [];
+
+    // Get random color
+    for (var i = 0; i < 4; i++) {
+        const randomColorIdx = Math.floor(Math.random() * bcgColorsList.length);
+        randomIndxList.push(randomColorIdx);
+    }
+
+    console.log(randomIndxList);
+
+    $('.part-1-color').attr('fill', bcgColorsList[randomIndxList[0]]);
+    $('.part-2-color').attr('fill', bcgColorsList[randomIndxList[1]]);
+    $('.part-3-color').attr('fill', bcgColorsList[randomIndxList[2]]);
+    $('.part-4-color').attr('fill', bcgColorsList[randomIndxList[3]]);
+
+    $body.css('background-image', `linear-gradient(30deg, ${bcgColorsList[randomIndxList[0]]} 0, ${bcgColorsList[randomIndxList[0]]} 2%, #f2f2f2 30%, #f2f2f2 70%, ${bcgColorsList[randomIndxList[0]]} 95%, ${bcgColorsList[randomIndxList[0]]} 100%)`);
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+const $window = $(window);
+/* unused harmony export $window */
+
+
+const dimensions = {
+    maxHeight: $(document).height(),
+    windowWidth: $window.width(),
+    windowHeight: $window.height()
+};
+/* unused harmony export dimensions */
+
+
+const colors = {
+    'sea': '#4aa3ba',
+    'color10': '#a03271',
+    'color15': '#008000',
+    'color19': '#065471',
+    'color24': '#11999E',
+    'color28': '#526ED0',
+    'color36': '#015051',
+    'color39': '#96CD39',
+    'color40': '#F40967',
+    'color41': '#3498DB',
+    'color42': '#FCC29A',
+    'color43': '#BAF5F0',
+    'color44': '#C9FDD7',
+    'color45': '#79D1C3',
+    'color46': '#6892D5',
+    'color47': '#FD9191',
+    'color48': '#F5FC9E',
+    'color49': '#9EFCB4',
+    'color50': '#85C8DD',
+    'color51': '#D3BD9A',
+    'color52': '#F5F0E8',
+    'color53': '#B0E6FF',
+    'color54': '#7687DB',
+    'color55': '#ABCECF',
+    'color56': '#C4DCE0',
+    'color57': '#DAF4F5'
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = colors;
+
 
 /***/ })
 /******/ ]);

@@ -41,6 +41,4 @@ export default function runLogoAnimation(){
         .to($wheelPart5, .2, {opacity: 1, ease: Back.easeOut.config(1.4)}, '-=.1')
         .to($logoName, 2, {opacity: 1, ease: Linear.easeOut}, '+=.2')
         .to($comingSoon, 1, {opacity: 1, ease: Linear.easeOut})
-
-        //.to($('#bcg-3-float-3'), 100, {x:'+=1000', y:'+=500'}, '-=.2')
 };
