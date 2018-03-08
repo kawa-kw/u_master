@@ -7,11 +7,9 @@ export const dimensions = {
 }
 
 export const colors = {
+
     'sea': '#4aa3ba',
-    'color10': '#a03271',
-    'color15': '#008000',
     'color24': '#11999E',
-    'color28': '#526ED0',
     'color39': '#96CD39',
     'color40': '#F40967',
     'color41': '#3498DB',
