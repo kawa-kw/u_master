@@ -20,5 +20,5 @@ export default function generateRandomColor() {
     $('.part-2-color').attr('fill', bcgColorsList[randomIndxList[1]]);
     $('.part-3-color').attr('fill', bcgColorsList[randomIndxList[2]]);
 
-    $body.css( 'background-image', `linear-gradient(30deg, ${bcgColorsList[randomIndxList[0]]} 0, ${bcgColorsList[randomIndxList[0]]} 2%, #f2f2f2 30%, #f2f2f2 70%, ${bcgColorsList[randomIndxList[0]]} 95%, ${bcgColorsList[randomIndxList[0]]} 100%)` )
+    $body.css( 'background-image', `linear-gradient(30deg, ${bcgColorsList[randomIndxList[0]]} 0, #f2f2f2 30%, #f2f2f2 70%, ${bcgColorsList[randomIndxList[0]]} 100%)` )
 };
