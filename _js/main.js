@@ -1,10 +1,9 @@
 import runLogoAnimation from './runLogoAnimation';
+import generateRandomColor from './generateRandomColor';
 
 $(document).ready(() => {
 
     runLogoAnimation();
-    // moveBcgLayer($('.js-intro-bcg-shapes'), $('#dev-bcg-intro-color #bcg-1'), 20);
-    // moveBcgLayer($('.js-intro-bcg-shapes'), $('#dev-bcg-intro-color #bcg-2'), 20);
-    // moveBcgLayer($('.js-intro-bcg-shapes'), $('#dev-bcg-intro-color #bcg-3'), 30);
+    generateRandomColor();
     console.log('animacja działa? działa!');
 });
