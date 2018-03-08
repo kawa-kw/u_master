@@ -10,10 +10,8 @@ export const colors = {
     'sea': '#4aa3ba',
     'color10': '#a03271',
     'color15': '#008000',
-    'color19': '#065471',
     'color24': '#11999E',
     'color28': '#526ED0',
-    'color36': '#015051',
     'color39': '#96CD39',
     'color40': '#F40967',
     'color41': '#3498DB',
@@ -32,5 +30,4 @@ export const colors = {
     'color54': '#7687DB',
     'color55': '#ABCECF',
     'color56': '#C4DCE0',
-    'color57': '#DAF4F5',
 }
