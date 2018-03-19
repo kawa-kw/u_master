@@ -37,6 +37,7 @@
 		margin-top: 30px
 		height: auto
 		width: 80vw
+		overflow: visible
 
 		+media(s, -100px)
 			width: 50vw
@@ -46,6 +47,19 @@
 
 .wheel-part
 	+transition
+
+	&--2
+		transform: translate(88.955321px, 91.633042px) scale(-1, 1) rotate(64deg) translate(-88.955321px, -91.633042px)
+
+	&--3
+		transform: translate(78.977098px, 191.652654px) rotate(-111deg) translate(-78.977098px, -191.652654px)
+
+	&--4
+		transform: translate(130.962501px, 249.515069px) scale(-1, 1) rotate(181deg) translate(-130.962501px, -249.515069px)
+
+	&--5
+		transform: translate(233.401165px, 229.140823px) rotate(123deg) translate(-233.401165px, -229.140823px)
+
 
 	+media(m)
 		// transform parameters changed by 5px compared to svg props
