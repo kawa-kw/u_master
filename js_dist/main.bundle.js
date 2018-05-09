@@ -77,7 +77,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 $(document).ready(() => {
 
     Object(__WEBPACK_IMPORTED_MODULE_0__runLogoAnimation__["a" /* default */])();
-    Object(__WEBPACK_IMPORTED_MODULE_1__generateRandomColor__["a" /* default */])();
+    //generateRandomColor();
     console.log('animacja działa? działa!');
 });
 
@@ -120,7 +120,7 @@ function runLogoAnimation() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = generateRandomColor;
+/* unused harmony export default */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__variables__ = __webpack_require__(3);
 
 
