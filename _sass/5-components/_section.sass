@@ -1,0 +1,45 @@
+.section
+	position: relative
+	padding: 0
+
+	// +media(l, 600px)
+	// 	padding: 30px $padding-section
+
+	&--wide
+		img
+			display: block
+			width: 100%
+			max-width: $width-max-box
+			height: auto
+			margin: 0 auto
+
+	&--half
+		display: flex
+		flex-wrap: wrap
+
+		.section__part
+			width: 50%
+			padding: 100px 0
+
+		.section__img
+			img
+				display: block
+				width: 40vw
+				max-width: 600px
+				height: auto
+				//margin: 0 auto
+				margin: 0 auto 0 0
+
+			&:nth-of-type(2n) img
+				margin: 0 0 0 auto
+
+		.section__text
+			background-color: $color-violet
+			color: white
+
+			background-color: rgba(#F1F1F1, .4)
+			color: black
+
+
+	&__text
+		text-align: center
