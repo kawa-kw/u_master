@@ -4,6 +4,6 @@ import generateRandomColor from './generateRandomColor';
 $(document).ready(() => {
 
     runLogoAnimation();
-    //generateRandomColor();
+    generateRandomColor();
     console.log('animacja działa? działa!');
 });

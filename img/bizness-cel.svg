@@ -218,7 +218,7 @@
                 <tspan x="67.59" y="156">JAK</tspan>
                 <tspan x="91.57" y="156">O</tspan>
             </text>
-            <g id="screen-frame" transform="translate(0.000000, 1.000000)" stroke="#FFFFFF" stroke-opacity="0.509341033">
+            <g id="screen-frame" stroke="#afafaf">
                 <g>
                     <rect id="Rectangle-16" stroke-width="6" x="3" y="3" width="1434" height="1164" rx="40"></rect>
                     <path d="M4.5,66 L1436.5,66" id="Line" stroke-width="6" stroke-linecap="square"></path>

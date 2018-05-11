@@ -1,0 +1,58 @@
+.footer
+	&__main,
+	&__secondary
+		position: relative
+		color: $color-white
+
+	&__main
+		padding: 100px 50px
+		background-color: $color-violet
+
+		a
+			display: block
+			color: $color-white
+
+		img
+			display: block
+			width: 10vw
+			min-width: 100px
+			height: auto
+			margin-bottom: 30px
+
+		+media(s)
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			img
+				margin-bottom: 0
+
+	&__secondary
+		+font(11px)
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 10px 15px
+		background-color: darken($color-violet, 5%)
+
+		i
+			margin: 10px 0 0 6px
+
+			&::before
+				+font($family: $font-icon)
+
+			+media(l)
+				margin-top: 12px
+
+		span:last-child
+			display: flex
+			align-items: flex-start
+
+		img
+			display: inline-block
+			height: 25px
+			width: auto
+			margin: 0 2px
+
+			+media(l)
+				margin-top: 2px

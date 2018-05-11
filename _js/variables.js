@@ -32,3 +32,18 @@ export const colors = {
     'color28': '#CE72BD',
     'color29': '#E352AE',
 }
+
+export const colorsBgc = {
+    'color2': '#11999E',
+    'color3': '#96CD39',
+    'color4': '#E04059',
+    'color5': '#3498DB',
+    'color8': '#6892D5',
+    'color10': '#85C8DD',
+    'color12': '#7687DB',
+    'color15': '#3A9188',
+    'color18': '#0DE2EA',
+    'color20': '#72DFD0',
+    'color21': '#33CCCC',
+    'color22': '#75BEDA',
+}

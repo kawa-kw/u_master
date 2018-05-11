@@ -1,11 +1,27 @@
 .section
 	position: relative
-	padding: 0
+	width: 100%
 
-	// +media(l, 600px)
-	// 	padding: 30px $padding-section
+	h2
+		margin-bottom: 40px
+		text-align: center
+
+	h4
+		text-align: center
+
+	&__text
+		max-width: $width-text
+		margin: 0 auto
+		text-align: center
+		color: $color-white
 
 	&--wide
+		padding: 80px 0
+		color: $color-white
+
+	&--wide-img
+		padding: 80px 0 0 0
+
 		img
 			display: block
 			width: 100%
@@ -14,32 +30,45 @@
 			margin: 0 auto
 
 	&--half
-		display: flex
-		flex-wrap: wrap
-
 		.section__part
-			width: 50%
-			padding: 100px 0
+			position: relative
+			padding: 60px 0
 
 		.section__img
 			img
 				display: block
-				width: 40vw
+				width: 80vw
 				max-width: 600px
 				height: auto
-				//margin: 0 auto
-				margin: 0 auto 0 0
-
-			&:nth-of-type(2n) img
-				margin: 0 0 0 auto
+				margin: 0 auto
 
 		.section__text
-			background-color: $color-violet
-			color: white
-
+			position: relative
+			max-width: none
+			padding: 50px 15px
+			//background-color: $color-violet
+			color: $color-black
 			background-color: rgba(#F1F1F1, .4)
-			color: black
 
+			p
+				margin: 0 auto
+				text-align: left
 
-	&__text
-		text-align: center
+		+media(m)
+			&__row
+				display: flex
+
+				.section__part
+					width: 50%
+
+				.section__img
+					img
+						width: 40vw
+
+				&:nth-child(2n)
+					flex-direction: row-reverse
+
+			.section__text p
+				+center
+				width: 70%
+				max-width: 600px
