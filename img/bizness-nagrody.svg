@@ -321,7 +321,7 @@
                     <g id="STAGES" transform="translate(16.000000, 8.000000)"></g>
                 </g>
             </g>
-            <g id="screen-frame" stroke="#FFFFFF" stroke-opacity="0.509341033">
+            <g id="screen-frame" stroke="#afafaf">
                 <g>
                     <rect id="Rectangle-16" stroke-width="6" x="3" y="3" width="1434" height="1164" rx="40"></rect>
                     <path d="M4.5,66 L1436.5,66" id="Line" stroke-width="6" stroke-linecap="square"></path>

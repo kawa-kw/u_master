@@ -77,7 +77,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 $(document).ready(() => {
 
     Object(__WEBPACK_IMPORTED_MODULE_0__runLogoAnimation__["a" /* default */])();
-    //generateRandomColor();
+    Object(__WEBPACK_IMPORTED_MODULE_1__generateRandomColor__["a" /* default */])();
     console.log('animacja działa? działa!');
 });
 
@@ -120,7 +120,7 @@ function runLogoAnimation() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export default */
+/* harmony export (immutable) */ __webpack_exports__["a"] = generateRandomColor;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__variables__ = __webpack_require__(3);
 
 
@@ -128,8 +128,8 @@ function generateRandomColor() {
     const $body = $('body');
     const bcgColorsList = [];
 
-    for (__WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colors */].colorName in __WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colors */]) {
-        bcgColorsList.push(__WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colors */][__WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colors */].colorName]);
+    for (__WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colorsBgc */].colorName in __WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colorsBgc */]) {
+        bcgColorsList.push(__WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colorsBgc */][__WEBPACK_IMPORTED_MODULE_0__variables__["a" /* colorsBgc */].colorName]);
     };
 
     var randomIndxList = [];
@@ -144,7 +144,8 @@ function generateRandomColor() {
     $('.part-2-color').attr('fill', bcgColorsList[randomIndxList[1]]);
     $('.part-3-color').attr('fill', bcgColorsList[randomIndxList[2]]);
 
-    $body.css('background-image', `linear-gradient(15deg, ${bcgColorsList[randomIndxList[0]]} 0, #f2f2f2 20%, #f2f2f2 85%, ${bcgColorsList[randomIndxList[0]]} 100%)`);
+    //$body.css( 'background-image', `linear-gradient(15deg, ${bcgColorsList[randomIndxList[0]]} 0, #f2f2f2 20%, #f2f2f2 85%, ${bcgColorsList[randomIndxList[0]]} 100%)` )
+    $('.js-section-bgc').css('background-color', bcgColorsList[randomIndxList[0]]);
 };
 
 /***/ }),
@@ -190,7 +191,24 @@ const colors = {
     'color28': '#CE72BD',
     'color29': '#E352AE'
 };
-/* harmony export (immutable) */ __webpack_exports__["a"] = colors;
+/* unused harmony export colors */
+
+
+const colorsBgc = {
+    'color2': '#11999E',
+    'color3': '#96CD39',
+    'color4': '#E04059',
+    'color5': '#3498DB',
+    'color8': '#6892D5',
+    'color10': '#85C8DD',
+    'color12': '#7687DB',
+    'color15': '#3A9188',
+    'color18': '#0DE2EA',
+    'color20': '#72DFD0',
+    'color21': '#33CCCC',
+    'color22': '#75BEDA'
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = colorsBgc;
 
 
 /***/ })

@@ -14,18 +14,26 @@
 
 <body>
 	<nav class="main-nav">
-		<img src="{{ site.baseurl }}img/logo-flat-dark.svg" alt="uMaster">
+		<!-- <img src="{{ site.baseurl }}img/logo-flat-dark.svg" alt="uMaster"> -->
 	</nav>
 
 	<main>
 		{{ content }}
 	</main>
 
-	<footer class="main-footer">
-		<img src="{{ site.baseurl }}img/logo-flat.svg" alt="uMaster">
-		<h1>Skontaktuj się z nami</h1>
-		<a href="mailto:kontakt@umaster.pl?subject=feedback">kontakt@umaster.pl</a>
-		<p class="sub-footer">uMaster, 2018</p>
+	<footer class="footer">
+		<div class="footer__main">
+			<img src="{{ site.baseurl }}img/logo-flat.svg" alt="uMaster">
+			<div class="footer__meta">
+				<h2>Skontaktuj się z nami</h2>
+				<a href="mailto:kontakt@umaster.pl?subject=feedback">kontakt@uMaster.pl</a>
+				<a href="tel:+48790404313">+48 790 404 313</a>
+			</div>
+		</div>
+		<p class="footer__secondary">
+			<span><i class="fa fa-copyright" aria-hidden="true"></i> uMaster, 2018</span>
+			<span>Crafted with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://cherrydots.pl/" target="_blank"><img src="{{ site.baseurl }}img/cherry-dots.svg" alt="Cherry Dots"></a></span>
+		</p>
 	</footer>
 
 	<script type="text/javascript" src="{{ site.baseurl }}js_dist/main.bundle.js"></script>

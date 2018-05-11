@@ -1,11 +1,11 @@
-import { dimensions, colors } from './variables';
+import { dimensions, colorsBgc } from './variables';
 
 export default function generateRandomColor() {
     const $body = $('body');
     const bcgColorsList = [];
 
-    for (colors.colorName in colors){
-        bcgColorsList.push(colors[colors.colorName]);
+    for (colorsBgc.colorName in colorsBgc){
+        bcgColorsList.push(colorsBgc[colorsBgc.colorName]);
     };
 
     var randomIndxList = [];
@@ -20,5 +20,6 @@ export default function generateRandomColor() {
     $('.part-2-color').attr('fill', bcgColorsList[randomIndxList[1]]);
     $('.part-3-color').attr('fill', bcgColorsList[randomIndxList[2]]);
 
-    $body.css( 'background-image', `linear-gradient(15deg, ${bcgColorsList[randomIndxList[0]]} 0, #f2f2f2 20%, #f2f2f2 85%, ${bcgColorsList[randomIndxList[0]]} 100%)` )
+    //$body.css( 'background-image', `linear-gradient(15deg, ${bcgColorsList[randomIndxList[0]]} 0, #f2f2f2 20%, #f2f2f2 85%, ${bcgColorsList[randomIndxList[0]]} 100%)` )
+    $('.js-section-bgc').css( 'background-color', bcgColorsList[randomIndxList[0]] )
 };

@@ -1,0 +1,44 @@
+.plans
+	> li
+		position: relative
+		max-width: 400px
+		padding: 20px
+		border: 1px solid $color-border
+		margin: 10px auto
+
+	li
+		+font($font-size-small)
+		color: $color-grey
+
+	+media(m)
+		display: flex
+		justify-content: center
+
+		> li
+			width: 30vw
+			margin: 10px
+
+	.plans__logo
+		height: 50px
+		width: 100%
+		text-align: center
+
+	.plans__description li
+		position: relative
+		padding: 5px 0 5px 20px
+		border-bottom: 1px solid rgba($color-border, .4)
+
+		&::before
+			+fa-icon($fa-check, 12px, rgba($color-border, .6))
+			position: absolute
+			top: 15px
+			left: 0
+
+		&:first-child
+			border-bottom: none
+
+			&::before
+				display: none
+
+		&:last-child
+			border-bottom: none
