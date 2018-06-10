@@ -79,15 +79,18 @@
 					height: 100px
 
 			.text-bgc
-				+font(80px, 700)
+				+font(40px, 700)
 				position: absolute
 				top: 6vw
 				left: 5vw
 				text-transform: uppercase
 				color: $color-white
 				color: #F9F9F9
-				text-shadow: 4px 4px 5px rgba($color-black, .2)
+				text-shadow: 4px 4px 4px rgba($color-black, .2)
 				z-index: 0
+
+				+media(s)
+					+font(80px, 700)
 
 				+media(m)
 					+font(50px, 700)
@@ -124,7 +127,10 @@
 		left: 0
 		right: 0
 		bottom: 0
-		background-image: linear-gradient(140deg, rgba($color-violet, .95) 10%, rgba($color-violet, 0) 70%)
+		background-image: linear-gradient(140deg, rgba($color-violet, .95) 10%, rgba($color-black, .4) 70%)
+
+		+media(m)
+			background-image: linear-gradient(140deg, rgba($color-violet, .95) 10%, rgba($color-black, .1) 70%)
 
 	&.section--meet-umaster
 		background-image: url(//picsum.photos/420/450?image=482)
