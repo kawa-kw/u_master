@@ -31,12 +31,25 @@
 	&--wide-img
 		padding: 80px 0 0 0
 
+		&.section--links
+			padding-top: 10px
+
 		img
 			display: block
 			width: 100%
 			max-width: $width-max-box
 			height: auto
 			margin: 0 auto
+
+		.section__img--desktop
+			display: none
+
+			+media(m)
+				display: block
+
+		.section__img--mobile
+			+media(m)
+				display: none
 
 	&--half
 		.section__part
